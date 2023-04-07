@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1260.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ostunes.uploadController">
+    <children>
+        <BorderPane layoutX="156.0" layoutY="186.0" prefHeight="720.0" prefWidth="1260.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <left>
+                <Pane prefHeight="670.0" prefWidth="130.0" style="-fx-background-color: #252525;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="128.0" fitWidth="174.0" layoutX="-15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/OSTunes-removebg.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="explore" accessibleRole="BUTTON" fitHeight="40.0" fitWidth="40.0" layoutX="45.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/explore.png" />
+                            </image>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ImageView>
+                        <Label layoutX="38.0" layoutY="191.0" prefHeight="19.0" prefWidth="53.0" text="EXPLORE" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="library" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="76.0" layoutX="43.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/library.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="22.0" layoutY="286.0" text="YOUR LIBRARY" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="upload" accessibleRole="BUTTON" fitHeight="38.0" fitWidth="39.0" layoutX="46.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/upload.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="21.0" layoutY="391.0" prefHeight="36.0" prefWidth="90.0" text="UPLOAD YOUR MUSIC" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children></Pane>
+            </left>
+            <top>
+                <Pane prefHeight="50.0" prefWidth="1260.0" style="-fx-background-color: #252525;" BorderPane.alignment="CENTER">
+                    <children>
+                        <TextField layoutX="175.0" layoutY="13.0" prefHeight="25.0" prefWidth="343.0" promptText="Search for songs... " style="-fx-border-radius: 50px;" />
+                        <ImageView fx:id="logout_btn" fitHeight="52.0" fitWidth="41.0" layoutX="1205.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/menu.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView accessibleRole="BUTTON" fitHeight="32.0" fitWidth="24.0" layoutX="526.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/search.png" />
+                            </image>
+                        </ImageView>
+                    </children></Pane>
+            </top>
+         <center>
+                  <Pane prefHeight="724.0" prefWidth="1114.0" style="-fx-background-color: #1e1e1e;" BorderPane.alignment="CENTER">
+                      <children>
+                  <ImageView fitHeight="435.0" fitWidth="794.0" layoutX="145.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #F74F93;">
+                     <image>
+                        <Image url="@images/upload_song.png" />
+                     </image>
+                  </ImageView>
+                          <Text fill="WHITE" layoutX="448.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload">
+                              <font>
+                                  <Font name="System Bold" size="37.0" />
+                              </font>
+                          </Text>
+                  <TextField fx:id="songName" layoutX="403.0" layoutY="434.0" prefHeight="30.0" prefWidth="250.0" promptText="Song Name" />
+                  <Button fx:id="chooseSong" layoutX="403.0" layoutY="556.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #F74F93;" text="choose song" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="artistName" layoutX="402.0" layoutY="476.0" prefHeight="30.0" prefWidth="250.0" promptText="Artist Name" />
+                  <Button fx:id="choosePic" layoutX="403.0" layoutY="518.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #F74F93;" text="choose pic" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="uploadSong" layoutX="496.0" layoutY="600.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #F74F93;" text="Upload" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="picLabel" layoutX="565.0" layoutY="522.0" prefHeight="17.0" prefWidth="107.0" text="No File Chosen" textFill="WHITE" />
+                  <Label fx:id="songLabel" layoutX="565.0" layoutY="560.0" text="No File Chosen" textFill="WHITE" />
+                      </children>
+                  </Pane>
+         </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

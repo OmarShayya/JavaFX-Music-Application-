@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ostunes.LoginController">
+    <children>
+        <BorderPane prefHeight="500.0" prefWidth="800.0">
+            <center>
+                <Pane prefHeight="500.0" prefWidth="304.0" style="-fx-background-color: linear-gradient(to bottom, #F94297, #FE787A);" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView blendMode="SRC_ATOP" fitHeight="367.0" fitWidth="396.0" layoutX="-46.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/OSTunes-removebg.png" />
+                            </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="20.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="When words fail, music speaks.">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+            </center>
+            <left>
+                <StackPane prefHeight="500.0" prefWidth="496.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane prefHeight="443.0" prefWidth="392.0" style="-fx-background-color: black;">
+                            <children>
+                                <TextField fx:id="tf_email" layoutX="71.0" layoutY="215.0" prefHeight="35.0" prefWidth="350.0" promptText="EMAIL" style="-fx-border-radius: 25px;">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="DEFAULT" />
+                                    </cursor>
+                                    <effect>
+                                        <Blend />
+                                    </effect>
+                                </TextField>
+                                <Text fill="WHITE" layoutX="71.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back">
+                                    <font>
+                                        <Font name="System Bold" size="39.0" />
+                                    </font>
+                                </Text>
+                                <Button fx:id="login_btn" layoutX="240.0" layoutY="339.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="181.0" style="-fx-background-color: #F74F93; -fx-border-radius: 50%; -fx-cursor: hand;" text="Login" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </Button>
+                                <Text fill="WHITE" layoutX="71.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not registered yet?">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </Text>
+                                <Button fx:id="sign_up_btn" layoutX="57.0" layoutY="139.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: black; -fx-cursor: hand;" text="Sign Up Here" textFill="#ff00c3">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Button>
+                                <Button layoutX="71.0" layoutY="440.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-cursor: hand;" text="Terms and Conditions" textFill="#ffffffad" underline="true">
+                                    <font>
+                                        <Font size="10.0" />
+                                    </font>
+                                </Button>
+                                <Button layoutX="57.0" layoutY="345.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" style="-fx-background-color: black; -fx-cursor: hand;" text="Forgot password?" textFill="WHITE">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Button>
+                        <PasswordField fx:id="pf_password" layoutX="73.0" layoutY="269.0" prefHeight="35.0" prefWidth="350.0" promptText="PASSWORD" />
+                            </children>
+                        </Pane>
+                    </children>
+                </StackPane>
+            </left>
+        </BorderPane>
+    </children>
+</AnchorPane>
