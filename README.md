@@ -23,3 +23,13 @@ to run the app on your computer, you need to create and connect to a database ca
       -song_id int AI PK
     
     
+
+![OSTunes login](https://user-images.githubusercontent.com/115045576/230653412-3df92dbe-079e-47eb-a9e2-f7a45dcf958d.png)
+
+![OSTunes sign up](https://user-images.githubusercontent.com/115045576/230653457-d248cdc0-a849-495b-bfb0-76274dbe1dfb.png)
+
+![OSTunes Home](https://user-images.githubusercontent.com/115045576/230653486-b919037b-38e6-441f-b8e6-d0855af92ba0.png)
+
+![OSTunes likes](https://user-images.githubusercontent.com/115045576/230653559-f1976745-ad5b-4069-a49c-49e18520a29f.png)
+
+![OSTunes upload](https://user-images.githubusercontent.com/115045576/230653606-b55b6565-bab2-4f1d-9156-14eec7471109.png)
